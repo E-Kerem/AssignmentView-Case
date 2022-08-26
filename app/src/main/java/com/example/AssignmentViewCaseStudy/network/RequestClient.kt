@@ -1,7 +1,7 @@
-package com.example.study.network
+package com.example.AssignmentViewCaseStudy.network
 
 import android.util.Log
-import com.example.study.model.ImageProperties
+import com.example.AssignmentViewCaseStudy.model.ImageProperties
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.Request

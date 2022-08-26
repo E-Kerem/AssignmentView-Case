@@ -1,7 +1,7 @@
-package com.example.study.util
+package com.example.AssignmentViewCaseStudy.util
 
 import android.content.Context
-import com.example.study.model.ImageProperties
+import com.example.AssignmentViewCaseStudy.model.ImageProperties
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException

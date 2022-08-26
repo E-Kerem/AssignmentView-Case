@@ -1,10 +1,10 @@
-package com.example.study
+package com.example.AssignmentViewCaseStudy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.study.data.JsonList
-import com.example.study.databinding.DemoListViewBinding
-import com.example.study.view.ListAdapter as ListAdapter1
+import com.example.AssignmentViewCaseStudy.data.JsonList
+import com.example.AssignmentViewCaseStudy.databinding.DemoListViewBinding
+import com.example.AssignmentViewCaseStudy.view.ListAdapter as ListAdapter1
 
 class DemoPage : AppCompatActivity() {
     private lateinit var binding: DemoListViewBinding

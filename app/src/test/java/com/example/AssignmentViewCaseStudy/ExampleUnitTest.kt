@@ -1,4 +1,4 @@
-package com.example.study
+package com.example.AssignmentViewCaseStudy
 
 import org.junit.Test
 
