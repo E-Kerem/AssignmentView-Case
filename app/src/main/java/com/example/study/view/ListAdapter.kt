@@ -1,15 +1,15 @@
-package com.example.AssignmentViewCaseStudy.view
+package com.example.study.view
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.AssignmentViewCaseStudy.databinding.ListItemBinding
-import com.example.AssignmentViewCaseStudy.model.ImageProperties
-import com.example.AssignmentViewCaseStudy.network.RequestClient
-import com.example.AssignmentViewCaseStudy.util.getGlide
-import com.example.AssignmentViewCaseStudy.util.getJsonDataFromAsset
+import com.example.study.databinding.ListItemBinding
+import com.example.study.model.ImageProperties
+import com.example.study.network.RequestClient
+import com.example.study.util.getGlide
+import com.example.study.util.getJsonDataFromAsset
 
 class ListAdapter(private val context: Context, private val imageDataSet: List<ImageProperties>):
     RecyclerView.Adapter<ListAdapter.ListViewHolder>() {

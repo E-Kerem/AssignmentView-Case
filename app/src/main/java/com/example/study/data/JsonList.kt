@@ -1,6 +1,6 @@
-package com.example.AssignmentViewCaseStudy.data
+package com.example.study.data
 
-import com.example.AssignmentViewCaseStudy.model.ImageProperties
+import com.example.study.model.ImageProperties
 
 class JsonList {
     fun getUrls(): List<ImageProperties> {

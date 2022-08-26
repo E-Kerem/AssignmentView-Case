@@ -1,4 +1,4 @@
-package com.example.AssignmentViewCaseStudy.util
+package com.example.study.util
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -8,9 +8,9 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
-import com.example.AssignmentViewCaseStudy.model.ImageProperties
-import com.example.AssignmentViewCaseStudy.network.RequestClient
-import com.example.AssignmentViewCaseStudy.view.ListAdapter
+import com.example.study.model.ImageProperties
+import com.example.study.network.RequestClient
+import com.example.study.view.ListAdapter
 import kotlin.math.abs
 
 fun ListAdapter.ListViewHolder.getGlide(context: Context, image: ImageProperties?,loadTime: MutableList<Long> ?) {
