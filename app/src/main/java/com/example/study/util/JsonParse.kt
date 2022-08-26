@@ -1,7 +1,6 @@
 package com.example.study.util
 
 import android.content.Context
-import com.example.study.model.ImageList
 import com.example.study.model.ImageProperties
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken

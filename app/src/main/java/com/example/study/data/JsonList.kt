@@ -1,13 +1,8 @@
 package com.example.study.data
 
 import com.example.study.model.ImageProperties
-import android.util.Log
-import com.example.study.util.getJsonDataFromAsset
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 
 class JsonList {
-
     fun getUrls(): List<ImageProperties> {
         return listOf(
             ImageProperties("https://db62cod6cnasq.cloudfront.net/user-media/0/image1-500kb.png",0,0),
