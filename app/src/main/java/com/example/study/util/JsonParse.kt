@@ -6,9 +6,6 @@ import com.example.study.model.ImageProperties
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
-import android.os.Bundle
-import java.io.InputStream
-
 
 fun getJsonDataFromAsset(context: Context, fileName: String): List<ImageProperties> {
     lateinit var jsonString: String
@@ -24,5 +21,3 @@ fun getJsonDataFromAsset(context: Context, fileName: String): List<ImageProperti
     val listOfImages = object : TypeToken<List<ImageProperties>>() {}.type
     return Gson().fromJson(jsonString, listOfImages)
 }
-
-private fun parseImageList(str: String?): ImageList= Gson().fromJson(str, ImageList::class.java)

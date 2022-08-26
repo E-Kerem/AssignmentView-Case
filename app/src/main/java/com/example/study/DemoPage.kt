@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.study.data.JsonList
 import com.example.study.databinding.DemoListViewBinding
-import com.example.study.util.getJsonDataFromAsset
 import com.example.study.view.ListAdapter as ListAdapter1
 
 class DemoPage : AppCompatActivity() {
