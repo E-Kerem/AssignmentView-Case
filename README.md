@@ -131,8 +131,6 @@ val imageUrls = adapters.getJsonDataFromAsset2("jsonList.json")
 ```
 
 ## Sample ShowCases
-![](app/src/main/res/drawable-v24/Screen Shot 2022-08-26 at 14.12.43.png )
-![](app/src/main/res/drawable-v24/Screen Shot 2022-08-26 at 14.12.51.png)
 ```kotlin
 2022-08-26 14:13:18.608 5837-5868/com.example.study D/OkHttp: Item No: 0 loaded in 103 milliseconds
 2022-08-26 14:13:21.504 5837-5896/com.example.study D/OkHttp: Item No: 1 loaded in 84 milliseconds

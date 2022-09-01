@@ -6,6 +6,8 @@ import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
 
+//OkHttp used to send image loading times from RecyclerView to the service:
+//HTTP efficiently makes your stuff load faster and saves bandwidth.
 class RequestClient {
     fun sendRequest(item: ImageProperties, list: MutableList<Long> ) {
         var client = OkHttpClient()
@@ -17,7 +19,7 @@ class RequestClient {
 
         val body = url?.let {
             FormBody.Builder()
-                .add(it, "Item No: ${itemNo?.plus(1)} loaded in $loadingTime milliseconds")
+                .add(it, "Item No: ${itemNo} loaded in $loadingTime milliseconds")
                 .build()
         }
 

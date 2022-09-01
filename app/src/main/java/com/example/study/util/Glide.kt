@@ -13,11 +13,16 @@ import com.example.study.network.RequestClient
 import com.example.study.view.ListAdapter
 import kotlin.math.abs
 
+// Glide’s primary focus is on making scrolling any kind of a list of images as smooth and fast as possible,
+// but Glide is also effective for almost any case where you need to fetch, resize, and display a remote image
 fun ListAdapter.ListViewHolder.getGlide(context: Context, image: ImageProperties?,loadTime: MutableList<Long> ?) {
     var client = RequestClient()
     val imgLink = image?.imgLink
     val startTime = System.currentTimeMillis()
     Glide.with(context).load(imgLink).diskCacheStrategy(DiskCacheStrategy.ALL)
+        // For most applications DiskCacheStrategy.RESOURCE is ideal.
+        // Applications that use the same resource multiple times in multiple sizes and are willing to trade off some speed and disk space
+        // in return for lower bandwidth usage may want to consider using DiskCacheStrategy.DATA or DiskCacheStrategy.ALL
         .listener(object : RequestListener<Drawable> {
             override fun onLoadFailed(
                 e: GlideException?,
@@ -51,3 +56,7 @@ fun ListAdapter.ListViewHolder.getGlide(context: Context, image: ImageProperties
         image?.let { loadTime?.let { it1 -> client.sendRequest(it, it1) } }
     }.start()
 }
+
+//Smart and automatic downsampling and caching minimize storage overhead and decode times.
+//Aggressive re-use of resources like byte arrays and Bitmaps minimizes expensive garbage collections and heap fragmentation.
+//Deep lifecycle integration ensures that only requests for active Fragments and Activities are prioritized and that Applications release resources when necessary to avoid being killed when backgrounded.
